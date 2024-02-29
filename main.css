@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: "Tajawal", sans-serif;
+}
+
+.h2 {
+    @apply text-H2  font-bold  !important;
+}
+
+.mainButton {
+    @apply bg-mainYellow text px-5 mt-5  py-3 rounded-lg
+}
+
+Square1 {
+    @apply w-Square h-Square rounded-md border-mainYellow relative border-2 inline-block
+} 
+Square2 {
+    @apply w-Square h-Square absolute rounded-md bg-mainYellow top-1/2 left-1/2  inline-block
+
+}
