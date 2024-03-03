@@ -2,23 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    font-family: "Tajawal", sans-serif;
-}
-
-.h2 {
-    @apply text-H2  font-bold  !important;
+body {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
 }
 
 .mainButton {
-    @apply bg-mainYellow text px-5 mt-5  py-3 rounded-lg
+  @apply bg-mainYellow px-10  mt-5  py-3 rounded-lg;
 }
 
 Square1 {
-    @apply w-Square h-Square rounded-md border-mainYellow relative border-2 inline-block
-} 
+  @apply w-Square h-Square rounded-md border-mainYellow relative border-2 inline-block;
+}
 Square2 {
-    @apply w-Square h-Square absolute rounded-md bg-mainYellow top-1/2 left-1/2  inline-block
+  @apply w-Square h-Square absolute rounded-md bg-mainYellow top-1/2 left-1/2  inline-block;
+}
+p {
+  @apply text-xl;
+}
+h3 {
+  @apply text-2xl font-bold my-5;
+}
+h4 {
+  @apply text-H4 font-bold my-3;
+}
+icon {
+  @apply absolute top-0 left-1/2 translate-x-[-50%] translate-y-[-50%]   h-icon flex justify-center items-center bg-mainYellow w-icon  rounded-full;
+}
 
+ItemOfAbout {
+  @apply bg-secondaryColor relative flex flex-col mt-24 rounded-lg p-10 ps-3;
+}
+
+.FooterLine {
+  @apply text-center text-base bg-footerColor1 text-white;
+}
+footer h4 {
+  @apply mb-10 text-white
+}
+footer p {
+  @apply text-white text-base mb-2;
+}
+
+.navBarButton{
+  @apply bg-mainYellow px-20 mt-5  py-3 rounded-lg;
+}
+ItemOfService{
+  @apply m-auto
+}
+ItemOfService img{
+  @apply w-screen
+}
+
+poster h3{
+  @apply md:text-2xl text-md font-bold my-5;
 }
