@@ -1,6 +1,6 @@
-// Initialization for ES Users
-const twElements = require("tw-elements");
-
+import twElements from "tw-elements";
 const { Collapse, initTE } = twElements;
 
+console.log("Initialization");
 initTE({ Collapse });
+

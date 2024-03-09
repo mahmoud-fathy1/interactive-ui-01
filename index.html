@@ -1,409 +1,1276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/output.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
-  </head>
-  <body>
-    <nav
-      class="relative  flex w-full flex-nowrap items-center justify-between   text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 text-black lg:flex-wrap lg:justify-start py-2"
-      data-te-navbar-ref
-    >
-      <div class="flex w-full flex-wrap items-center justify-between  lg:px-20 px-10 ">
-        <div class="ml-2 relative">
-          <a class=" dark:text-neutral-200" href="#">
-            <img class="w-logo" src="images/logo.webp" alt="" />
-          </a>
-          <p class="absolute top-[110%] text-black z-20 w-52 lg:translate-x-[35%] translate-x-[27%] font-semibold text-center font-reem xl:text-4xl text-2xl  ">البيت الخليجي</p>
-        </div>
-        <!-- Hamburger button for mobile view -->
-        <button
-          class="block border-0 bg-transparent px-2 text-black hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-black lg:hidden"
-          type="button"
-          data-te-collapse-init
-          data-te-target="#navbarSupportedContent2"
-          aria-controls="navbarSupportedContent2"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <!-- Hamburger icon -->
-          <span class="[&>svg]:w-7">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-7 w-7"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </span>
-        </button>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>البيت الخليجي</title>
+		<link rel="stylesheet" href="./src/output.css" />
+		<link rel="icon" href="images/logo.webp" type="image/x-icon" />
+		<link href="node_modules/aos/dist/aos.css" rel="stylesheet" />
+		<meta
+			name="keywords"
+			content="شراء الأثاث المستعمل, شركة البيت الخليجي, شراء الأثاث بالرياض, شراء الأثاث والأجهزة الكهربائية, معدات المطاعم المستعملة, غرف نوم مستعملة, مكيفات مستعملة, أجهزة كهربائية مستعملة, طاولات الطعام والكراسي المستعملة, شاشات مستعملة"
+		/>
+		<meta
+			name="description"
+			content="شركة البيت الخليجي تقدم خدمات شراء الأثاث المستعمل بأفضل الأسعار في الرياض. نقوم بشراء غرف النوم، مجالس، مطابخ، أجهزة كهربائية، مكيفات، ومعدات المطاعم المستعملة بكفاءة ودقة. اتصل بنا الآن للحصول على تقييم مجاني لأثاثك."
+		/>
 
-        <!-- Collapsible navbar container -->
-        <div
-          class=" mt-2 hidden    items-center lg:mt-0 lg:!flex lg:basis-auto"
-          id="navbarSupportedContent2"
-          data-te-collapse-item
-        >
-          <!-- Left links -->
-          <ul
-            class="list-style-none mr-auto lg:me-auto flex     flex-col pl-0 lg:mt-1 lg:flex-row"
-            data-te-navbar-nav-ref
-          >
-            <!-- Home link -->
-           
-            <!-- Features link -->
-            <li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-              <a
-                class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 "
-                href="#"
-                data-te-nav-link-ref
-                >الرئيسية</a
-              >
-            </li>
-            <li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-              <a
-                class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 "
-                href="#"
-                data-te-nav-link-ref
-                >عن الشركة</a
-              >
-            </li>
-            <li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-              <a
-                class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 "
-                href="#"
-                data-te-nav-link-ref
-                >خدماتنا</a
-              >
-            </li>
-            <li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
-              <a
-                class="p-0 navBarButton px-5! text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700 "
-                href="#"
-                data-te-nav-link-ref
-                >اتصل بنا</a
-              >
-            </li>
-      
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet" />
+	</head>
+	<body>
+		<FixedIcon class="bg-whats right-4">
+			<a href="https://api.whatsapp.com/send?phone=9660535775197"> <img src="images/whatsFixed.webp" alt="" /></a>
+		</FixedIcon>
+		<FixedIcon class="bg-phone left-4">
+			<img src="images/phoneFixed.webp" alt="" />
+		</FixedIcon>
+		<nav class="fixed shadow-2xl z-50 bg-white top-0 left-0 right-0">
+			<nav
+				class="relative flex w-full flex-nowrap items-center justify-between text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 text-black lg:flex-wrap lg:justify-start py-2"
+				data-te-navbar-ref
+			>
+				<div class="flex w-full flex-wrap items-center justify-between lg:px-20 px-10">
+					<div class="ml-2 relative">
+						<a class="dark:text-neutral-200" href="#">
+							<img class="w-logo" src="images/logo.webp" alt="" />
+						</a>
+						<p
+							id="titleInNav"
+							class="absolute top-[110%] z-50 text-white w-52 lg:translate-x-[35%] translate-x-[27%] font-semibold text-center font-reem xl:text-4xl text-2xl"
+						>
+							البيت الخليجي
+						</p>
+					</div>
+					<!-- Hamburger button for mobile view -->
+					<button
+						class="block border-0 bg-transparent px-2 text-black hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-black lg:hidden"
+						type="button"
+						data-te-collapse-init
+						data-te-target="#navbarSupportedContent2"
+						aria-controls="navbarSupportedContent2"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<!-- Hamburger icon -->
+						<span class="[&>svg]:w-7">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-7 w-7">
+								<path
+									fill-rule="evenodd"
+									d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+									clip-rule="evenodd"
+								/>
+							</svg>
+						</span>
+					</button>
 
-    <TopSection class="relative  ">
-      <img class="w-screen h-[80vh] object-cover" src="./images/mainimg.webp" alt="" />
-      <div
-        class="absolute flex top-0 h-full w-full flex-col items-center justify-center"
-      >
-        <img src="images/logo.webp" alt="" />
-        <h1 class=" md:text-6xl text-4xl animate__animated animate__zoomInDown my-5 font-reem font-extrabold">البيت الخليجي</h1>
-        <h2 class="md:text-6xl text-4xl animate__animated animate__zoomInDown  font-reem font-extralight my-5">
-          شراء اثاث مستعمل بالرياض
-        </h2>
-        <button class="mainButton">اتصل بنا</button>
-      </div>
-    </TopSection>
-    <div class="md:px-20 px-5 ">
-      <About class="grid my-5 flex items-center md:grid-cols-2">
-        <div class="p-5">
-          <div class="flex items-center">
-            <Square1>
-              <Square2></Square2>
-            </Square1>
-            <h2 class="text-H2 my-5 ms-10 font-bold">عن الشركة</h2>
-          </div>
-          <h3 class="text-2xl font-medium">شركة شراء اثاث مستعمل بالرياض</h3>
-          <p class="my-5">
-            شركة البيت الخليجي تمتلك خبرة كبيرة في مجال شراء الاثاث بجميع مناطق
-            الرياض، لذلك إذا كنت تريد التخلص من الأثاث القديم والمستعمل يمكنك
-            التواصل معنا الآن على الفور، وسوف نقوم بإرسال مندوبين متخصصين من أجل
-            معاينة الأثاث والأدوات والأجهزة المستعملة ووضع سعر مميز للعميل بصورة
-            سريعة وباحترافية تامة فنحن نستطيع تقدير قيمة الأثاث المستعمل
-            الحقيقة.
-          </p>
-          <button class="mainButton">اتصل بنا</button>
-        </div>
-        <img
-          class="mx-auto rounded-xl"
-          src="./images/about section.webp"
-          alt=""
-        />
-      </About>
-      <Elbyt>
-        <div class="flex items-center">
-          <Square1>
-            <Square2></Square2>
-          </Square1>
-          <h2 class="text-H2 my-5 ms-10 font-bold">البيت الخليجي</h2>
-        </div>
-        <p class="my-5">
-          تعتبر شركة البيت الخليجي واحدة من أبرز الشركات المتخصصة في شراء الأثاث
-          والأجهزة الكهربائية الجديدة و المستعملة في مدينة الرياض.
-        </p>
-        <p>شركة شراء اثاث مستعمل بافضل</p>
-        <p>
-          نشتري اثاث مستعمل ( غرف نوم - مجالس - مطابخ - اجهزة كهربائية - مكيفات
-          - معدات المطاعم ).
-        </p>
-      </Elbyt>
-      <section class="grid mt-20 lg:grid-cols-4   md:grid-cols-2 grid-cols-1 gap-3">
-        <ItemOfAbout>
-          <icon>
-            <img src="./images/Group.webp" alt="" />
-          </icon>
-          <h3>خبرة 10 سنوات</h3>
-          <p>
-            تتميز شركتنا بخبرتها الواسعه فى المجال ، لذلك يعتمد الكثير علينا فى
-            التخلص من اثاثه المستعمل بالرياض ،يمكنك بيع اثاثك المستعمل مهما كانت
-            حالته .
-          </p>
-        </ItemOfAbout>
-        <ItemOfAbout>
-          <icon>
-            <img src="./images/Group (1).webp" alt="" />
-          </icon>
-          <h3>عمالة مدربة</h3>
-          <p>
-            تتميز شركتنا بخبرتها الواسعه فى المجال ، لذلك يعتمد الكثير علينا فى
-            التخلص من اثاثه المستعمل بالرياض ، يمكنك بيع اثاثك المستعمل مهما
-            كانت حالته .
-          </p>
-        </ItemOfAbout>
-        <ItemOfAbout>
-          <icon>
-            <img src="./images/Vector.webp" alt="" />
-          </icon>
-          <h3>افضل الاسعار</h3>
-          <p>
-            تقدم الشركة خدماتها بافضل الاسعار بالرياض ، فلدينا افضل الفنين
-            المتخصصين فى تقييم الاثاث بامانة تامة ، لذلك لا داعى للقلق ستحصل على
-            اعلى عائد مادي فى الاثاث ، سارع بالتواصل الان .
-          </p>
-        </ItemOfAbout>
-        <ItemOfAbout>
-          <icon>
-            <img src="./images/Vector (1).webp" alt="" />
-          </icon>
-          <h3>افضل الخدمات</h3>
-          <p>
-            تسعى شركتنا دائما للتطور لكسب ثقة عملائنا ، كل ذلك دون تكلفة العميل
-            اى مصاريف اضافية او جهد ، يمكنك الاعتماد علينا لتحصل على افضل
-            المزايا المتخصصة من خلال افضل الفنين المحترفين .
-          </p>
-        </ItemOfAbout>
-      </section>
-      <div class="flex justify-center">
-        <button class="mainButton">اتصل بنا</button>
-      </div>
+					<!-- Collapsible navbar container -->
+					<div
+						class="mt-2 hidden items-center lg:mt-0 lg:!flex lg:basis-auto"
+						id="navbarSupportedContent2"
+						data-te-collapse-item
+					>
+						<!-- Left links -->
+						<ul class="list-style-none mr-auto lg:me-auto flex flex-col pl-0 lg:mt-1 lg:flex-row" data-te-navbar-nav-ref>
+							<!-- Home link -->
 
-      <Services >
-        <div class="flex items-center ">
-          <Square1>
-            <Square2></Square2>
-          </Square1>
-          <h2 class="text-H2 my-5 ms-10 font-bold">خدماتنا</h2>
-        </div>
-        <p>نشتري اثاث مستعمل شراء غرف نوم و شراء مكيفات و شراء مطابخ .</p>
-        <p>و شراء اجهزة كهربائية مستعملة بالرياض</p>
+							<!-- Features link -->
+							<li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
+								<a
+									class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700"
+									href="#topSection"
+									data-te-nav-link-ref
+									>الرئيسية</a
+								>
+							</li>
+							<li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
+								<a
+									class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700"
+									href="#about"
+									data-te-nav-link-ref
+									>عن الشركة</a
+								>
+							</li>
+							<li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
+								<a
+									class="p-0 text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700"
+									href="#services"
+									data-te-nav-link-ref
+									>خدماتنا</a
+								>
+							</li>
+							<li class="mb-4 mx-5 pl-2 lg:mb-0 lg:pl-0 lg:pr-1" data-te-nav-item-ref>
+								<a
+									class="p-0 navBarButton px-5! text-black transition duration-200 hover:text-neutral-700 hover:ease-in-out focus:text-neutral-700"
+									href="tel:+9660535775197"
+									data-te-nav-link-ref
+									>اتصل بنا</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</nav>
+		<TopSection id="topSection" class="relative mt-72">
+			<div id="default-carousel" class="relative w-full" data-carousel="slide">
+				<!-- Carousel wrapper -->
+				<div class="relative h-screen overflow-hidden">
+					<!-- Item 1 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/images/slider/1.webp"
+							class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 2 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/images/slider/2.webp"
+							class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 3 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/images/slider/3.webp"
+							class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 4 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/images/slider/4.webp"
+							class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+					<!-- Item 5 -->
+					<div class="hidden duration-700 ease-in-out" data-carousel-item>
+						<img
+							src="/images/slider/5.webp"
+							class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+							alt="..."
+						/>
+					</div>
+				</div>
 
-        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1   mt-10 gap-x-5 gap-y-10">
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/1.webp" alt="" />
-            <h4>شراء الأجهزة الكهربائية المستعملة</h4>
-            <p class="opacity-80 text-base">
-              أفضل شركة شراء أجهزة كهربائية مستعملة بالرياض بأعلي الأسعار
-            </p>
-          </ItemOfService>
-          <ItemOfService >
-            <img  src="images/البيت الخليجي اثاث (1)/2.webp" alt="" />
-            <h4 >شراء ثلاجات مستعملة</h4>
-            <p class="opacity-80 text-base">
-              إذا كنت ترغب في بيع ثلاجتك المستعملة شركه المحترف تشتري جميع أنواع
-              الثلاجات بأسعار مميزة جداً.
-            </p>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/3.webp" alt="" />
-            <h4>شراء مكيفات مستعملة</h4>
-            <p class="opacity-80 text-base">
-              نشتري جميع أنواع المكيفات ومنها المكيف السبليت والمتنقل ومكيفات
-              المباني السبليت الكاسيت والشباك وجميع أنواع المكيفات بأسعار مميزة.
-            </p>
-          </ItemOfService>
+				<!-- Slider controls -->
+				<button
+					type="button"
+					class="absolute top-0 start-0 z-50 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-prev
+				>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10"
+						>
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
+						</svg>
+						<span class="sr-only">Previous</span>
+					</span>
+				</button>
+				<button
+					type="button"
+					class="absolute top-0 end-0 z-50 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+					data-carousel-next
+				>
+					<span
+						class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+					>
+						<svg
+							class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+							aria-hidden="true"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 6 10"
+						>
+							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
+						</svg>
+						<span class="sr-only">Next</span>
+					</span>
+				</button>
+			</div>
 
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/4.webp" alt="" />
-            <h4>شراء شاشات مستعملة</h4>
-            <p class="opacity-80 text-base">
-              المحترف أفضل شركة في الرياض متخصصة بشراء جميع أنواع شاشات التلفاز
-              بجميع أنواعها باسعار مناسبة.
-            </p>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/5.webp" alt="" />
-            <h4>شراء غرف نوم كاملة مستعملة</h4>
-            <p class="opacity-80 text-base">
-              نشتري الأنواع المختلفة لغرف النوم بأسعار ممتازة
-            </p>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/6.webp" alt="" />
-            <h4>شراء معدات المطاعم والأثاث الفندقي</h4>
-            <p class="opacity-80 text-base">
-              نحن في شركه المحترف نشتري معدات المطاعم والاثاث الفندقي باسعار
-              مميزة جداً.
-            </p>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/7.webp" alt="" />
-            <h4>شراء طاولات الطعام والكراسي مستعملة</h4>
-            <p class="opacity-80 text-base">
-              نشتري جميع أنواع سفر الطعام والكراسي بأسعار مميزة.
-            </p>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/البيت الخليجي اثاث (1)/8.webp" alt="" />
-            <h4>شراء مجالس مستعملة</h4>
-            <p class="opacity-80 text-base">
-              نقوم في الرياض بشراء جميع أنواع المجالس باسعار مميزة.
-            </p>
-          </ItemOfService>
-        </div>
-      </Services>
-      <poster class="grid grid-cols-2 mt-10">
-        <img src="./images/poster1.webp" alt="" />
-        <div
-          class="bg-secondaryColor flex justify-center items-center flex-col"
-        >
-          <h3 class="mb-5">نقل اثاث مستعمل بالرياض</h3>
-          <button class="mainButton !px-5">اتصل بنا</button>
-        </div>
-      </poster>
-      <Services>
-        <div class="flex items-center">
-          <Square1>
-            <Square2></Square2>
-          </Square1>
-          <h2 class="text-H2 my-5 ms-10 font-bold">خدماتنا</h2>
-        </div>
-        <p>نشتري اثاث مستعمل شراء غرف نوم و شراء مكيفات و شراء مطابخ .</p>
-        <p>و شراء اجهزة كهربائية مستعملة بالرياض</p>
+			<div
+				data-aos="zoom-in"
+				data-aos-duration="2000"
+				class="absolute z-30 flex top-0 h-full w-full m-auto flex-col items-center justify-center"
+			>
+				<img src="images/logo2.webp" alt="" />
+				<h1
+					data-aos="flip-left"
+					data-aos-duration="2000"
+					class="md:text-6xl text-4xl my-5 text-white font-reem font-extrabold"
+				>
+					البيت الخليجي
+				</h1>
+				<h2
+					data-aos="flip-right"
+					data-aos-duration="2000"
+					class="md:text-6xl text-4xl text-white font-reem font-extralight my-5"
+				>
+					شراء اثاث مستعمل بالرياض
+				</h2>
+				<a href="tel:+9660535775197"><button class="mainButton">اتصل بنا</button></a>
+			</div>
+		</TopSection>
+		<div class="md:px-20 px-5">
+			<About id="about" class="grid my-5 flex items-center md:grid-cols-2">
+				<div class="p-5">
+					<div class="flex items-center">
+						<Square1>
+							<Square2></Square2>
+						</Square1>
+						<h2 data-aos="fade-left" data-aos-duration="2000" class="text-H2 my-5 ms-10 font-bold">عن الشركة</h2>
+					</div>
+					<h3 data-aos="fade-left" data-aos-duration="2000" class="text-2xl font-medium">شركة شراء اثاث مستعمل بالرياض</h3>
+					<p data-aos="fade-left" data-aos-duration="2000" class="my-5">
+						شركة البيت الخليجي تمتلك خبرة كبيرة في مجال شراء الاثاث بجميع مناطق الرياض، لذلك إذا كنت تريد التخلص من الأثاث
+						القديم والمستعمل يمكنك التواصل معنا الآن على الفور، وسوف نقوم بإرسال مندوبين متخصصين من أجل معاينة الأثاث
+						والأدوات والأجهزة المستعملة ووضع سعر مميز للعميل بصورة سريعة وباحترافية تامة فنحن نستطيع تقدير قيمة الأثاث
+						المستعمل الحقيقة.
+					</p>
+					<a href="tel:+9660535775197"><button class="mainButton">اتصل بنا</button></a>
+				</div>
+				<img
+					data-aos="fade-up"
+					data-aos-duration="2000"
+					class="mx-auto rounded-xl"
+					src="./images/about section.webp"
+					alt=""
+				/>
+			</About>
+			<Elbyt>
+				<div class="flex items-center">
+					<Square1>
+						<Square2></Square2>
+					</Square1>
+					<h2 class="text-H2 my-5 ms-10 font-bold">البيت الخليجي</h2>
+				</div>
+				<p class="my-5">
+					تعتبر شركة البيت الخليجي واحدة من أبرز الشركات المتخصصة في شراء الأثاث والأجهزة الكهربائية الجديدة و المستعملة في
+					مدينة الرياض.
+				</p>
+				<p>شركة شراء اثاث مستعمل بافضل</p>
+				<p>نشتري اثاث مستعمل ( غرف نوم - مجالس - مطابخ - اجهزة كهربائية - مكيفات - معدات المطاعم ).</p>
+			</Elbyt>
+			<section class="grid mt-20 lg:grid-cols-4 flex items-start md:grid-cols-2 grid-cols-1 gap-3">
+				<ItemOfAbout>
+					<icon>
+						<img data-aos="slide-up" data-aos-duration="1500" src="./images/Group.webp" alt="" />
+					</icon>
+					<h3 data-aos="slide-left" data-aos-duration="1500">خبرة 10 سنوات</h3>
+					<p data-aos="slide-up" data-aos-duration="1500">
+						تتميز شركتنا بخبرتها الواسعه فى المجال ، لذلك يعتمد الكثير علينا فى التخلص من اثاثه المستعمل بالرياض ،يمكنك بيع
+						اثاثك المستعمل مهما كانت حالته .
+					</p>
+				</ItemOfAbout>
+				<ItemOfAbout>
+					<icon>
+						<img data-aos="slide-up" data-aos-duration="1500" src="./images/Group (1).webp" alt="" />
+					</icon>
+					<h3 data-aos="slide-left" data-aos-duration="1500">عمالة مدربة</h3>
+					<p data-aos="slide-up" data-aos-duration="1500">
+						تتميز شركتنا بخبرتها الواسعه فى المجال ، لذلك يعتمد الكثير علينا فى التخلص من اثاثه المستعمل بالرياض ، يمكنك بيع
+						اثاثك المستعمل مهما كانت حالته .
+					</p>
+				</ItemOfAbout>
+				<ItemOfAbout>
+					<icon>
+						<img data-aos="slide-up" data-aos-duration="1500" src="./images/Vector.webp" alt="" />
+					</icon>
+					<h3 data-aos="slide-left" data-aos-duration="1500">افضل الاسعار</h3>
+					<p data-aos="slide-up" data-aos-duration="1500">
+						تقدم الشركة خدماتها بافضل الاسعار بالرياض ، فلدينا افضل الفنين المتخصصين فى تقييم الاثاث بامانة تامة ، لذلك لا
+						داعى للقلق ستحصل على اعلى عائد مادي فى الاثاث ، سارع بالتواصل الان .
+					</p>
+				</ItemOfAbout>
+				<ItemOfAbout>
+					<icon>
+						<img data-aos="slide-up" data-aos-duration="1500" src="./images/Vector (1).webp" alt="" />
+					</icon>
+					<h3 data-aos="slide-left" data-aos-duration="1500">افضل الخدمات</h3>
+					<p data-aos="slide-up" data-aos-duration="1500">
+						تسعى شركتنا دائما للتطور لكسب ثقة عملائنا ، كل ذلك دون تكلفة العميل اى مصاريف اضافية او جهد ، يمكنك الاعتماد
+						علينا لتحصل على افضل المزايا المتخصصة من خلال افضل الفنين المحترفين .
+					</p>
+				</ItemOfAbout>
+			</section>
+			<div class="flex justify-center">
+				<a href="tel:+9660535775197"><button class="mainButton">اتصل بنا</button></a>
+			</div>
 
-        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-10 gap-x-5 gap-y-10">
-          <ItemOfService >
-            <img src="images/الخدمات/1.webp" alt="" />
-            <h4>تركيب اثاث مكتبي</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="images/الخدمات/2.webp" alt="" />
-            <h4>تركيب اثاث منزلي</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="./images/الخدمات/3.webp" alt="" />
-            <h4>تركيب طاولات التلفاز</h4>
-          </ItemOfService>
+			<Services>
+				<div class="flex items-center">
+					<Square1>
+						<Square2></Square2>
+					</Square1>
+					<h2 class="text-H2 my-5 ms-10 font-bold">خدماتنا</h2>
+				</div>
+				<p>نشتري اثاث مستعمل شراء غرف نوم و شراء مكيفات و شراء مطابخ .</p>
+				<p>و شراء اجهزة كهربائية مستعملة بالرياض</p>
 
-          <ItemOfService>
-            <img src="images/الخدمات/4.webp" alt="" />
-            <h4>تركيب مطابخ</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="./images/الخدمات/5.webp" alt="" />
-            <h4>صيانة وتصليح اثاث مستعمل</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="./images/الخدمات/6.webp" alt="" />
-            <h4>فك وتركيب الاثاث</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="./images/الخدمات/7.webp" alt="" />
-            <h4>نجار غرف نوم</h4>
-          </ItemOfService>
-          <ItemOfService>
-            <img src="./images/الخدمات/8.webp" alt="" />
-            <h4>تركيب اثاث ايكيا</h4>
-          </ItemOfService>
-        </div>
-      </Services>
-      <poster class="grid grid-cols-2 mt-10">
-        <div
-          class="bg-secondaryColor flex justify-center items-center flex-col"
-        >
-          <h3 class="mb-5">نجار اثاث بالرياض</h3>
-          <button class="mainButton">اتصل بنا</button>
-        </div>
-        <img src="./images/poster2.webp" alt="" />
-      </poster>
-    </div>
-    <footer>
-      <div class="FooterLine">جمعع الحقوق محفوظة © لشركة البيت الخليجي</div>
-      <div class="grid md:grid-cols-7 grid-cols-1 p-10 gap-5 px-20 bg-footerColor2">
-        <div class="col-span-2 md:col-span-1">
-          <img class="mb-5" src="./images/footer/logo.webp" alt="" />
-          <p>شركة شراء اثاث مستعمل بافضل الاسعار</p>
-          <p>
-            نشتري اثاث مستعمل ( غرف نوم - مجالس - مطابخ - اجهزة كهربائية -
-            مكيفات - معدات المطاعم ).
-          </p>
-        </div>
-        <div class="col-span-2 md:col-span-1">
-          <h4>روابط هامة</h4>
-          <p>البيت الخليجي</p>
-          <p>عن الشركة</p>
-          <p>خدماتنا</p>
-          <p>اتصل بنا</p>
-        </div>
-        <div class="md:col-span-1 col-span-2 ">
-          <h4 class="mb-10 text-white">الخدمات</h4>
-          <p>شراء الأجهزة الكهربائية المستعملة</p>
-          <p>شراء غرف نوم كاملة مستعملة</p>
-          <p>شراء طاولات الطعام والكراسي مستعملة</p>
-          <p>نقل اثاث مستعمل بالرياض</p>
-          <p>نجار اثاث بالرياض</p>
-          <p>صيانة وتصليح اثاث مستعمل</p>
-          <p>تركيب مطابخ</p>
-          <p>تركيب اثاث منزلي</p>
-        </div>
-        <div class="md:col-span-2  col-span-1">
-          <h4>تواصل معنا</h4>
-          <p class="flex items-center">
-            <span
-              ><img class="me-2" src="images/footer/location.webp" alt=""
-            /></span>
-            العنوان: السعودية الرياض
-          </p>
-          <p class="flex items-center">
-            <span
-              ><img class="me-2" src="images/footer/phone.webp" alt="" /></span
-            >تيليفون: 0535775197
-          </p>
-          <div class="flex   justify-between mt-4">
-            <img src="images/footer/whats.webp" alt="" />
-            <img src="images/footer/twitter.webp" alt="" />
-            <img src="images/footer/youtube.webp" alt="" />
-            <img src="images/footer/linkedin.webp" alt="" />
-            <img src="images/footer/facebook.webp" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="FooterLine">تصميم وتطوير © شركة Core Technology Solution</div>
-    </footer>
-    <script src="dist/bundle.js"></script>
-  </body>
+				<div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-start justify-start mt-10 gap-x-5 gap-y-10">
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/1.webp" alt="" />
+						<h4>شراء الأجهزة الكهربائية المستعملة</h4>
+						<p class="opacity-80 text-base">أفضل شركة شراء أجهزة كهربائية مستعملة بجميع انواعها بالرياض بأعلي الأسعار</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/2.webp" alt="" />
+						<h4>شراء ثلاجات مستعملة</h4>
+						<p class="opacity-80 text-base">
+							إذا كنت ترغب في بيع ثلاجتك المستعملة شركه البيت الخليجي تشتري جميع أنواع الثلاجات بأسعار مميزة جداً.
+						</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/3.webp" alt="" />
+						<h4>شراء مكيفات مستعملة</h4>
+						<p class="opacity-80 text-base">
+							نشتري جميع أنواع المكيفات ومنها المكيف السبليت والمتنقل ومكيفات المباني السبليت الكاسيت والشباك.
+						</p>
+					</ItemOfService>
+
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/4.webp" alt="" />
+						<h4>شراء شاشات مستعملة</h4>
+						<p class="opacity-80 text-base">
+							البيت الخليجي أفضل شركة في الرياض متخصصة بشراء جميع أنواع شاشات التلفاز بجميع أنواعها باسعار مناسبة.
+						</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/5.webp" alt="" />
+						<h4>شراء غرف نوم كاملة مستعملة</h4>
+						<p class="opacity-80 text-base">نشتري الأنواع المختلفة لغرف النوم بأسعار ممتازة</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/6.webp" alt="" />
+						<h4>شراء معدات المطاعم الفندقية</h4>
+						<p class="opacity-80 text-base">نحن في شركه البيت الخليجي نشتري معدات المطاعم والاثاث الفندقي باسعار مميزة .</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/7.webp" alt="" />
+						<h4>شراء طاولات الطعام مستعملة</h4>
+						<p class="opacity-80 text-base">نشتري جميع أنواع سفر الطعام والكراسي بأسعار مميزة.</p>
+					</ItemOfService>
+					<ItemOfService>
+						<img data-aos="fade-up" data-aos-duration="1500" src="images/البيت الخليجي اثاث (1)/8.webp" alt="" />
+						<h4>شراء مجالس مستعملة</h4>
+						<p class="opacity-80 text-base">نقوم في الرياض بشراء جميع أنواع المجالس باسعار مميزة.</p>
+					</ItemOfService>
+				</div>
+			</Services>
+			<poster data-aos="zoom-in" data-aos-duration="1500" class="grid grid-cols-2 mt-10">
+				<img class="w-full" src="./images/poster1.webp" alt="" />
+				<div class="bg-secondaryColor flex justify-center items-center flex-col">
+					<h3 class="md:mb-5 mb-1 text-center">نقل اثاث مستعمل بالرياض</h3>
+					<a href="tel:+9660535775197"><button class="mainButton">اتصل بنا</button></a>
+				</div>
+			</poster>
+			<Services id="services">
+				<div class="flex items-center">
+					<Square1>
+						<Square2></Square2>
+					</Square1>
+					<h2 class="text-H2 my-5 ms-10 font-bold">خدماتنا</h2>
+				</div>
+				<p>نشتري اثاث مستعمل شراء غرف نوم و شراء مكيفات و شراء مطابخ .</p>
+				<p>و شراء اجهزة كهربائية مستعملة بالرياض</p>
+
+				<div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 items-start mt-10 gap-x-5 gap-y-10">
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="images/الخدمات/1.webp" alt="" />
+						<h4>تركيب اثاث مكتبي</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="images/الخدمات/2.webp" alt="" />
+						<h4>تركيب اثاث منزلي</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="./images/الخدمات/3.webp" alt="" />
+						<h4>تركيب طاولات التلفاز</h4>
+					</ItemOfService>
+
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="images/الخدمات/4.webp" alt="" />
+						<h4>تركيب مطابخ</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="./images/الخدمات/5.webp" alt="" />
+						<h4>صيانة وتصليح اثاث مستعمل</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="./images/الخدمات/6.webp" alt="" />
+						<h4>فك وتركيب الاثاث</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="./images/الخدمات/7.webp" alt="" />
+						<h4>نجار غرف نوم</h4>
+					</ItemOfService>
+					<ItemOfService data-aos="slide-up" data-aos-duration="1500">
+						<img src="./images/الخدمات/8.webp" alt="" />
+						<h4>تركيب اثاث ايكيا</h4>
+					</ItemOfService>
+				</div>
+			</Services>
+			<poster data-aos="zoom-in" data-aos-duration="1500" class="grid grid-cols-2 mt-10">
+				<div class="bg-secondaryColor flex justify-center items-center flex-col">
+					<h3 class="md:mb-5 mb-1">نجار اثاث بالرياض</h3>
+					<a href="tel:+9660535775197"><button class="mainButton">اتصل بنا</button></a>
+				</div>
+				<img src="./images/poster2.webp" alt="" />
+			</poster>
+			<container class="grid lg:grid-cols-2 grid-cols-1 gap-10">
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء المكيفات والأجهزة الكهربائية المستعملة</h1>
+					</div>
+					<p class="text-justify">
+						بعض النقاط المهمة التي يجب مراعاتها عند شراء هذه الأجهزة المستعملة. أولاً وقبل كل شيء، يجب أن التأكد من حالة
+						الجهاز المستعمل ومدى قابليته للعمل بشكل صحيح. نقوم بفحص الجهاز بعناية وتحقق من وجود أي تلفيات أو عيوب فيه. قد
+						يكون من الأفضل إجراء اختبار للجهاز للتأكد من أدائه المناسب قبل الشراء. ثانياً، الحصول على كافة المعلومات الضرورية
+						عن سجل الصيانة وتاريخ استخدام الجهاز. يساعدنا ذلك في تقييم عمر الجهاز ومدى استدامته في المستقبل. ثالثاً، مقارنة
+						الأسعار بين الأجهزة المستعملة والجديدة. قد يكون السعر هو الدافع الأساسي وراء بيع جهاز مستعمل، لذا تأكد من أن
+						السعر معقول ويتناسب مع حالة الأجهزة المستعملة المراد بيعها. أخيراً، احتساب تكاليف الصيانة المستقبلية عند شراء
+						أجهزة كهربائية مستعملة. قد يتطلب الجهاز القديم تكاليف صيانة أعلى أو قطع غيار أكثر تكلفة.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">فحص الاثاث المستعمل</h1>
+					</div>
+					<p class="text-justify">
+						فحص الأثاث المستعمل يمثل خطوة أساسية قبل شرائه، حيث يساعد في التأكد من جودة القطع وسلامتها. أهمية فحص الأثاث
+						المستعمل وأسبابه، مثلاً، الحاجة للتأكد من سلامة الأثاث وعدم وجود تلفيات أو عيوب. كما يمكنك التطرق إلى الخطوات
+						الأساسية لفحص الأثاث مثل فحص الإطار والهيكل والتأكد من عدم وجود تشققات أو كسور، أهمية الفحص الشامل لأثاث المستعمل
+						فضلاً عن فحص الأقمشة والمواد المستخدمة في التنجيد والتأكد من سلامتها.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شركة شراء الأثاث المستعمل</h1>
+					</div>
+					<p class="text-justify">
+						تسعى شركة شراء الأثاث المستعمل لمدة خمسة عشر عام إلى تقديم خدمة مميزة وتجربة فريدة لعملائها. تتمتع الشركة بخبرة
+						واسعة في هذا المجال، حيث تعمل منذ خمسة عشر عام وقد أثبتت جدارتها واكتسبت ثقة العديد من العملاء. أحد أهم مزايا
+						الشركة هو اهتمامها بجودة الأثاث المستعمل الذي تقوم بشرائه. تقوم الشركة بفحص وتقييم القطع بعناية لضمان حالتها
+						الجيدة وملاءمتها لإعادة استخدامها. كما تقوم بتوفير تقارير مفصلة عن حالة الأثاث المستعمل للعملاء، مما يساعدهم في
+						اتخاذ قرارات مستنيرة. تتميز الشركة أيضًا بأسعارها التنافسية والعادلة. تقوم الشركة بتقدير قيمة الأثاث المستعمل
+						بناءً على عوامل متعددة مثل حالة القطع وعمرها وطلب السوق، مما يسمح للعملاء بالحصول على قيمة مقابل مالهم. بالإضافة
+						إلى ذلك، توفر الشركة خدمة الاستلام والتسليم المريحة. يمكن للعملاء الاتصال بالشركة وتحديد موعد لاستلام الأثاث
+						المستعمل من منزلهم، وبعد التقييم والاتفاق على السعر، يتم ترتيب عملية الشراء وتوصيل الأثاث إلى مستودعات الشركة.
+						باختصار، تجربة العمل مع شركة شراء الأثاث المستعمل لمدة خمسة عشر عام مثالية لأولئك الذين يبحثون عن طريقة موثوقة
+						ومريحة لبيع الأثاث المستعمل. توفر الشركة خدمة عالية الجودة، وتقدم أسعارًا عادلة، وتضمن راحة العملاء في عملية
+						الاستلام والتسليم.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء الأثاث المستعمل بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						الأثاث المستعمل هو مصطلح يشير إلى القطع الأثاثية التي تم استخدامها من قبل أشخاص آخرين قبل أن تصل إلى الشخص الذي
+						يقوم بشرائها. يعتبر الاثاث المستعمل خيارًا شائعًا للعديد من الأشخاص نظرًا للعديد من الفوائد التي يقدمها. أحد
+						الفوائد الرئيسية لشراء الأثاث المستعمل هو التكلفة المنخفضة. يمكنك العثور على قطع أثاث بجودة جيدة وبأسعار أقل
+						بكثير مقارنةً بالأثاث الجديد. يمكنك أن توفر الكثير من المال وتجد العديد من القطع التي تناسب ذوقك واحتياجاتك.
+						بالإضافة إلى ذلك، شراء الأثاث المستعمل يساهم في الحفاظ على البيئة. عندما تشتري قطعة أثاث مستعملة، فإنك تمنحها
+						فرصة جديدة للحياة بدلاً من أن تنتهي في مكب النفايات. هذا يقلل من النفايات ويقلل من استهلاك الموارد الطبيعية التي
+						يتم استخدامها في إنتاج الأثاث الجديد. ومن الجوانب الأخرى، يمكن أن يكون الأثاث المستعمل فرصة للتميز والتصميم
+						الفريد. يمكنك العثور على قطع نادرة أو ذات طابع فريد من نوعه، مما يعطي منزلك شخصية فريدة ومميزة. كما يمكنك إعادة
+						تجديد الأثاث المستعمل وتخصيصه ليناسب ذوقك الشخصي وديكور المنزل. ومع ذلك، هناك بعض العيوب المحتملة لشراء الأثاث
+						المستعمل، مثل احتمالية وجود بعض التلفيات أو العيوب البصرية نتيجة للاستخدام السابق. لذلك، يجب عليك التحقق جيدًا من
+						حالة القطع قبل الشراء والتأكد من أنها في حالة جيدة وتستحق الاستثمار. باختصار، الأثاث المستعمل يمثل خيارًا ماليًا
+						وبيئيًا جيدًا، بالإضافة إلى قدرته على توفير تصميم مميز وفريد للمنزل. قبل شراء الأثاث المستعمل بالرياض، يجب عليك
+						البحث والتأكد من جودة القطع ومطابقتها لاحتياجاتك ومتطلباتك.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">أفضل شركة شراء اثاث مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						شركة البيت الخليجي لشراء الاثاث المستعمل بالرياض والمدن المجاورة هي شركة من انجح الشركات في الرياض في ذلك المجال،
+						تميزت الشركة خلال ١٥ سنة في ذلك التخصص لتصبح أكثر الشركات تأثيرا ذلك العام. وهذه بعض مميزاتنا التي ننفرد بها:
+					</p>
+					<ul>
+						<li>1. السعر المناسب للعملاء وعدم المبالغة فيه حتى يناسب العميل ثم المستهلك.</li>
+						<li>2. الحفاظ التام على الاثاث حتى تصل للعميل بنفس الجودة عند استلامها.</li>
+						<li>3. توفير أفضل خدمة والتي نالت إعجاب العملاء والتي تميزنا عن غيرنا في هذا المجال</li>
+						<li>4. العمل المستمر من فريق العمل ليصل لأعلى خدمة ممكنة للعميل.</li>
+						<li>5. الخبرة التي استمرت عشرات السنوات.</li>
+						<li>6. أفضل شركة شراء اثاث مستعمل</li>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">حي الصحافة لشراء الأثاث المستعمل</h1>
+					</div>
+					<p class="text-justify">شراء أثاث مستعمل حي الصحافة</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">حي الصحافة لشراء الأجهزة الكهربائية المستعملة</h1>
+					</div>
+					<p class="text-justify">شراء أجهزة كهربائية مستعملة حي الصحافة</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">حي العارض لشراء الأجهزة الكهربائية المستعملة</h1>
+					</div>
+					<p class="text-justify">شراء أجهزة كهربائية مستعملة حي العارض</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أثاث مستعمل حي العارض</h1>
+					</div>
+					<p class="text-justify">حي العارض لشراء الأثاث المستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي العليا</h1>
+					</div>
+					<p class="text-justify">حي العليا لشراء الأثاث المستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أجهزة كهربائية مستعملة حي العليا</h1>
+					</div>
+					<p class="text-justify">حي الياسمين لشراء الأثاث المستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أجهزة كهربائية مستعملة حي الياسمين</h1>
+					</div>
+					<p class="text-justify">حي الياسمين لشراء الأجهزة الكهربائية المستعملة</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أجهزة كهربائية مستعملة حي الملقا</h1>
+					</div>
+					<p class="text-justify">حي الملقا لشراء الأجهزة الكهربائية المستعملة</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أثاث مستعمل حي الملقا</h1>
+					</div>
+					<p class="text-justify">حي الملقا لشراء الأجهزة الكهربائية</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء أثاث مستعمل حي الربيع</h1>
+					</div>
+					<p class="text-justify">حي الربيع لأثاث المستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">نقل وتخزين الأثاث المستعمل</h1>
+					</div>
+					<p class="text-justify">
+						عندما يتعلق الأمر بنقل وتخزين الأثاث المستعمل، هنا بعض النصائح العامة التي يمكن أن تساعدك:
+					</p>
+					<ul>
+						<li>
+							1. التخطيط المسبق: قبل بدء عملية النقل أو التخزين، قم بوضع خطة مفصلة. حدد الموعد المناسب للنقل أو التخزين، وحدد
+							العناصر التي ترغب في نقلها أو تخزينها.
+						</li>
+						<li>
+							2. التنظيف والصيانة: قبل نقل الأثاث، قم بتنظيفه بشكل جيد وتأكد من إصلاح أي أضرار موجودة. هذا يضمن حماية القطع
+							ويمنع تفاقم الأضرار أثناء النقل أو التخزين.
+						</li>
+						<li>
+							3. التغليف المناسب: أستخدم مواد التغليف المناسبة مثل الكرتون، والفقاعات البلاستيكية، والشرائط اللاصقة لحماية
+							الأثاث من الخدوش والكسور أثناء النقل. قم بتفكيك الأثاث القابل للفك ووضعه في صناديق منفصلة.
+						</li>
+						<li>
+							4. أستعن بالمحترفين: إذا كان لديك أثاث كبير الحجم أو قطع قيمة، قد يكون من الأفضل الاستعانة بــ شركة نقل أثاث
+							محترفة. ستتولى الشركة المتخصصة المسؤولية عن التعامل الآمن مع الأثاث وضمان وصوله بأمان إلى وجهته.
+						</li>
+						<li>
+							5. الاهتمام بالتخزين: إذا كنت تخزن الأثاث لفترة طويلة، فتأكد من اختيار مكان مناسب وجاف لتخزينه. قم بتغطية
+							الأثاث بغطاء واقٍ للحماية من الغبار والرطوبة.
+						</li>
+						<li>
+							6. التسمية والتوثيق: قم بتسمية جميع صناديق الأثاث بشكل واضح واحتفظ بقائمة توثيق تحتوي على محتويات كل صندوق. هذا
+							سيسهل عليك العثور على العناصر المطلوبة عندما تحتاج إليها.
+						</li>
+						<li>
+							7. التأمين: قبل نقل أو تخزين الأثاث المستعمل، قد ترغب في التفكير في الحصول على تأمين للأثاث. هذا يوفر حماية
+							إضافية في حالة حدوث أي ضرر أو فقدان.
+						</li>
+						<p>إذا كان لديك أي أسئلة محددة حول عملية النقل أو التخزين، فلا تتردد في طرحها. سأكون سعيدًا بمساعدتك!</p>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شركة شراء مطابخ مستعملة بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						إذا كنت ترغب في بيع مطبخك المستعمل في الرياض بطريقة سهلة ومريحة، فإن شركة البيت الخليجي هي الحل المثالي بالنسبة
+						لك. تعتبر شركة البيت الخليجي واحدة من أبرز الشركات الأفضل في شراء المطابخ المستعملة بشكل احترافي ومهني.
+					</p>
+					<ul>
+						<li>
+							1. السعر المناسب: تتميز شركة البيت الخليجي بتقديم أسعار مناسبة وعادلة لشراء المطابخ المستعملة. يقدر فريق
+							الخبراء في الشركة قيمة المطابخ المستعملة بشكل عادل ويقدم عروضًا تجارية تلبي توقعاتك. بفضل هذا النهج العادل،
+							يمكنك أن تكون واثقًا من أنك ستحصل على قيمة عادلة وعادة أعلى من السعر الذي تحصل عليه عند بيعها بشكل فردي.
+						</li>
+						<li>
+							2. الاحترافية والمهنية: تعتبر الاحترافية والمهنية في شركة شراء مطابخ مستعملة بالرياض من أهم القيم التي تتميز
+							بها شركة البيت الخليجي. يعمل فريق المحترفين في الشركة بجدية ومهنية عالية لضمان تجربة سلسة ومريحة للعملاء. سواءً
+							كنت بحاجة إلى تقييم لمطبخك المستعمل أو إزالته، يقدم فريق البيت الخليجي المساعدة والمشورة المهنية لضمان أن تتم
+							عملية البيع بشكل سلس ومرضٍ.
+						</li>
+						<li>
+							3. عملية بيع سهلة: جعل شركة البيت الخليجي عملية بيع مطبخك المستعمل في الرياض سهلة وميسرة. يمكنك الاتصال بنا
+							لتقييم المطبخ وتقديم العرض التجاري. بعد الاتفاق على السعر والتفاصيل، يتم ازالة المطبخ من الموقع بشكل محترف
+							وفعال.
+						</li>
+					</ul>
+					<p>
+						استفد من السعر المناسب والاحترافية والمهنية التي توفرها شركة البيت الخليجي لبيع مطبخك المستعمل في الرياض. قم
+						بالتواصل معنا اليوم لتجربة عملية بيع مريحة وناجحة.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">أفضل شركة شراء اثاث مستعمل في الرياض</h1>
+					</div>
+					<p class="text-justify">
+						بالتأكيد! شركة البيت الخليجي تعتبر واحدة من أفضل الشركات في مجال شراء الأثاث المستعمل والاجهزة المنزلية
+						المستعملة. تتميز الشركة بمجموعة من العوامل التي تجعلها متميزة ومفضلة لدى العديد من العملاء.
+					</p>
+					<p class="text-justify">
+						أحد أبرز مزايا شركة البيت الخليجي هو مصداقيتها وسمعتها الطيبة في السوق. فهي تتمتع بتاريخ طويل في هذا المجال
+						ولديها خبرة واسعة في تقييم وشراء الأثاث المستعمل بأسعار عادلة ومناسبة.
+					</p>
+					<p class="text-justify">
+						تقدم شركة البيت الخليجي خدمة ممتازة لعملائها، حيث يتم التعامل معهم باحترافية واحترام. فريق العمل مدرب جيدًا
+						ومهني، وهم يقدمون خدمة سريعة وفعالة لشراء الأثاث المستعمل من المنازل والشركات.
+					</p>
+					<p class="text-justify">
+						بالإضافة إلى ذلك، تهتم أفضل شركة شراء اثاث مستعمل في الرياض بجودة الأثاث المستعمل الذي تشتريه. فهي تقوم بتقييم
+						القطع بعناية وتحديد قيمتها الحقيقية بناءً على حالتها وعمرها وماركتها. هذا يضمن أن تحصل على سعر عادل ومناسب للأثاث
+						الذي تبيعه. باختصار، شركة البيت الخليجي هي خيارك المثالي عندما يتعلق الأمر ببيع الأثاث المستعمل. فهي توفر خدمة
+						ممتازة، وتقدم أسعارًا عادلة، وتضمن رضا العملاء.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">لماذا نبيع الاثاث المستعمل</h1>
+					</div>
+					<p class="text-justify">بعض الأسباب الشائعة لبيع الأثاث المستعمل والأجهزة المنزلية المستعملة:</p>
+					<ul>
+						<li>
+							1. التحديث والتجديد: قد يكون السبب الرئيسي لبيع الأثاث المستعمل والأجهزة المنزلية المستعملة هو رغبة المالك في
+							تحديث منزله أو تجديد ديكوره. قد يشعر الأشخاص برغبة في تجديد المظهر العام للمنزل واستبدال الأثاث المستعمل بقطع
+							جديدة.
+						</li>
+						<li>
+							2. الانتقال: عندما يقرر الأشخاص الانتقال إلى منزل جديد أو شقة جديدة، قد يكون من الأسباب الرئيسية لبيع الأثاث
+							المستعمل والأجهزة المنزلية المستعملة هو عدم الحاجة إلى نقل كل العناصر معهم. يفضل بعض الأشخاص بيع الأثاث
+							المستعمل وشراء قطع جديدة بعد الانتقال.
+						</li>
+						<li>
+							3. التخلص من العناصر غير المستخدمة: قد يكون لدى الأشخاص العديد من العناصر في منازلهم التي لم يعدوا يستخدمونها.
+							بيع الأثاث المستعمل والأجهزة المنزلية المستعملة يمكن أن يكون وسيلة للتخلص من هذه العناصر وتحرير مساحة في
+							المنزل.
+						</li>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء معدات المطاعم المستعملة</h1>
+					</div>
+					<p class="text-justify">
+						بيع معدات المطاعم المستعملة والكوفي شوب يمكن أن يكون مصدرًا جيدًا للعائد المالي. فعندما يقرر صاحب مطعم أو كوفي
+						شوب تجديد معداته أو إغلاق عمله، فإن بيع المعدات المستعملة يمكن أن يوفر فرصة لتحقيق أرباح إضافية.
+					</p>
+					<p class="text-justify">
+						هناك عدة عوامل يجب أخذها في الاعتبار عند تحديد العائد المتوقع من بيع معدات المطاعم المستعملة:
+					</p>
+					<ul>
+						<li>
+							1. حالة المعدات: يعتمد العائد إلى حد كبير على حالة المعدات. إذا كانت المعدات في حالة جيدة وعملية، فمن المحتمل
+							أن يتم بيعها بأسعار أعلى. ومن الجيد أيضًا إذا كانت المعدات تحظى بشهرة جيدة وتعتبر علامة تجارية موثوقة.
+						</li>
+						<li>
+							2. العرض والطلب: يؤثر العرض والطلب في السوق على العائد المتوقع. إذا كان هناك طلب كبير على المعدات المستعملة في
+							منطقتك، فمن المرجح أن تحصل على عائد أعلى. يمكنك مراجعة الإعلانات المشابهة لمعرفة الأسعار المتداولة.
+						</li>
+						<li>
+							3. العمر والتكنولوجيا: يعتبر العمر والتكنولوجيا عاملين مهمين أيضًا. قد يكون المشترون مستعدين لدفع مبالغ أعلى
+							للمعدات الحديثة والتكنولوجيا الأحدث.
+						</li>
+						<li>
+							4. الترويج والتسويق: يمكن أن يؤثر الطريقة التي تروج بها لمعداتك وتسوقها على العائد المتوقع. يمكنك استخدام
+							الإعلانات المجانية عبر الإنترنت أو التعاون مع وكلاء بيع المعدات المستعملة لزيادة فرص بيعها.
+						</li>
+					</ul>
+					<p class="text-justify">
+						بصفة عامة، شراء معدات المطاعم المستعملة من المهم أخذ جميع العوامل المذكورة في الاعتبار عند تحديد العائد المتوقع
+						من بيع معدات المطاعم المستعملة. يمكنك أيضًا التشاور مع خبراء في مجال الأعمال أو الاستشاريين الماليين للحصول على
+						تقدير أكثر دقة للقيمة المتوقعة لمعداتك.
+					</p>
+					<p class="text-justify">
+						شركة البيت الخليجي لشراء معدات المطاعم المستعملة والكوفي شوب في خدمتكم على مدار اليوم خدمة باحترافية بأفضل طريقة
+						ممكنة
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء المكيفات الجديدة والمستعملة</h1>
+					</div>
+					<p class="text-justify">
+						نحن نقدم خدمات شراء المكيفات الجديدة والمستعملة، الثلاجات، الشاشات، الغسالات، المطابخ، الأفران، غرف النوم، الكنب،
+						وأثاث الفنادق المستعمل. بالإضافة إلى ذلك، نقوم أيضًا بشراء معدات المطاعم المستعملة. نحن ملتزمون خدمة عالية الجودة
+						وبأسعار تنافسية. فريقنا المتخصص يضمن تقديم خدمة عملاء ممتازة وتلبية احتياجاتك بأفضل طريقة ممكنة. اتصل بنا اليوم
+						لمزيد من التفاصيل والاستفسارات.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء الأجهزة الجديدة والمستعملة</h1>
+					</div>
+					<p class="text-justify">
+						تغيير الأجهزة الكهربائية القديمة، وخاصة المكيفات، واستبدالها بأجهزة حديثة له أهمية كبيرة من حيث توفير الطاقة
+						وتقليل استهلاك الكهرباء الزائد. تعتبر المكيفات القديمة غالبًا غير فعالة في استخدام الكهرباء وتستهلك كميات كبيرة
+						من الطاقة، مما يؤدي إلى زيادة فواتير الكهرباء وتأثير سلبي على البيئة.
+					</p>
+					<p class="text-justify">
+						باستبدال المكيفات القديمة بأجهزة حديثة وفعالة من حيث استخدام الطاقة شراء يمكن تحقيق عدة فوائد:
+					</p>
+					<ul>
+						<li>
+							أولاً، ستلاحظ تقليلًا في فواتير الكهرباء، حيث تعمل المكيفات الحديثة بكفاءة أعلى وتستهلك كمية أقل من الكهرباء
+							لتحقيق نفس الأداء.
+						</li>
+						<li>
+							ثانيًا، التحول إلى مكيفات حديثة يقلل من تأثيرنا البيئي. بفضل التكنولوجيا المتقدمة، صممت المكيفات الحديثة لتكون
+							أكثر فعالية في استخدام الطاقة وتقليل انبعاثات ثاني أكسيد الكربون، مما يساهم في الحفاظ على البيئة وتقليل التغير
+							المناخي.
+						</li>
+					</ul>
+					<p class="text-justify">
+						في إزالة الغبار والشوائب والروائح غير المرغوب فيها من الهواء، مما يؤدي إلى توفير بيئة صحية ومريحة في المنزل.
+						باختصار، تغيير الأجهزة الكهربائية القديمة وخاصة المكيفات يعتبر استثمارًا جيدًا في توفير الطاقة والمال، وحماية
+						البيئة، وتحسين جودة الهواء الداخلي. قد يتطلب ذلك استثمارًا مبدئيًا، ولكنه سيكون له تأثير إيجابي طويل الأمد على
+						المدى البعيد.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شركة أثاث مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						بالطبع! إعادة التدوير للأثاث تمتلك أهمية كبيرة في العديد من الجوانب. هنا مقال يسلط الضوء على هذه الأهمية. عندما
+						يتعلق الأمر بالأثاث، فإن إعادة التدوير تعتبر خيارًا مستدامًا ومفيدًا للبيئة. شراء أثاث مستعمل شمال الرياض إليك
+						أهم الجوانب التي تبرز أهمية إعادة التدوير للأثاث:
+					</p>
+					<ul>
+						<li>
+							1. حفظ الموارد الطبيعية: يتطلب إنتاج الأثاث الجديد استخدام كميات كبيرة من الخشب والمواد الخام الأخرى، مما يؤدي
+							إلى استنزاف الموارد الطبيعية. عند إعادة تدوير الأثاث، يتم تقليل الحاجة إلى إنتاج قطع جديدة، مما يوفر الموارد
+							ويقلل من التأثير البيئي.
+						</li>
+						<li>
+							2. تقليل النفايات: يتم التخلص من كميات كبيرة من الأثاث كل عام، مما يزيد من مشكلة التخلص من النفايات. عند إعادة
+							التدوير، يمكن إعادة استخدام الأثاث القديم بدلاً من التخلص منه، مما يحد من حجم النفايات ويقلل من الحاجة إلى
+							مواقع التخلص من النفايات.
+						</li>
+						<li>
+							3. تقليل الانبعاثات الضارة: عملية تصنيع الأثاث الجديد قد تتطلب استخدام مواد كيميائية ضارة وملوثة للبيئة.
+							بالمقابل، عند إعادة تدوير الأثاث، يمكن إعادة تجديد القطع وتحويلها إلى منتجات جديدة دون الحاجة إلى استخدام هذه
+							المواد الضارة.
+						</li>
+						<li>
+							4. تعزيز الابتكار والإبداع: إعادة تدوير الأثاث يشجع على الابتكار والإبداع في تصميم الأثاث. يمكن تحويل القطع
+							القديمة إلى قطع فريدة وأصلية من خلال تجديد وإعادة صياغتها. هذا يعزز الاستدامة ويتيح فرصًا للفنانين والمصممين
+							لإبداع قطع فريدة وجميلة.
+						</li>
+					</ul>
+					<p>
+						باختصار، إعادة التدوير للأثاث تعزز الاستدامة البيئية وتحمي الموارد الطبيعية، بالإضافة إلى تقليل النفايات
+						والانبعاثات الضارة. لذا، يجب تشجيع إعادة التدوير كخيار مفضل عندما يتعلق الأمر بالأثاث.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">معارض شركة البيت الخليجي لشراء المكيفات والأجهزة الكهربائية المستعملة</h1>
+					</div>
+					<p class="text-justify">
+						الحل الذكي للتخلص من الأجهزة القديمة بطريقة مربحة ومستدامة في ظل التقدم التكنولوجي السريع، يتم تحديث الأجهزة
+						الكهربائية بشكل مستمر، مما يتركنا مع الأجهزة القديمة التي لم تعد مفيدة لنا. وفي حالة المكيفات والأجهزة الكهربائية
+						الأخرى، يمكن أن يكون التخلص منها مشكلة صعبة ومربكة. وهنا يأتي دور شركات شراء المكيفات والأجهزة الكهربائية
+						المستعملة. فوائد بيع المكيفات والأجهزة الكهربائية المستعملة:
+					</p>
+					<ul>
+						<li>
+							1. الحصول على قيمة مادية: شركات شراء المكيفات والأجهزة الكهربائية المستعملة تقدم فرصة للأشخاص للحصول على قيمة
+							مادية للأجهزة القديمة التي لم يعدوا بحاجة إليها. يتم تقييم الأجهزة وتقديم عروض شراء عادلة ومناسبة للعملاء، مما
+							يساعدهم على تحقيق عائد مالي من الأجهزة القديمة.
+						</li>
+						<li>
+							2. البيئة والاستدامة: بدلاً من رمي الأجهزة القديمة في المزابل، يتم إعادة استخدامها وإعادة تدويرها من قبل شركات
+							شراء المكيفات والأجهزة الكهربائية المستعملة. هذا يساهم في الحفاظ على الموارد الطبيعية وتقليل النفايات
+							الإلكترونية، وبالتالي يساهم في الحفاظ على البيئة.
+						</li>
+						<li>
+							3. السهولة والراحة: بدلاً من محاولة بيع الأجهزة القديمة بشكل فردي، يمكن للعملاء التعامل مع شركة شراء المكيفات
+							والأجهزة الكهربائية المستعملة التي تقدم خدمة سهلة ومريحة.
+						</li>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شركة البيت الخليجي لشراء الأثاث المستعمل في الرياض</h1>
+					</div>
+					<p class="text-justify">
+						الحل الأمثل للتخلص من الأثاث القديم بطريقة مربحة وبيئية في عصرنا الحالي، يعتبر الاستهلاك والتغيير المستمر في
+						الأثاث من الأمور الشائعة في حياة الكثير من الأشخاص. ومع تطور التكنولوجيا وتغير الموضة، يصبح من الصعب الاحتفاظ
+						بالأثاث لفترة طويلة. شراء أثاث مستعمل جنوب الرياض وبالتالي، يتراكم الأثاث القديم في المنازل ويصبح تحتاج إلى تخلص
+						منه. وهنا يأتي دور شركات شراء الأثاث المستعمل. فوائد شراء الأثاث المستعمل:
+					</p>
+					<ul>
+						<li>
+							1. توفير المال: إن شراء الأثاث المستعمل يعتبر خيارًا مربحًا للكثير من الأشخاص الذين يبحثون عن تجديد أثاث
+							منازلهم بتكلفة أقل. يمكن للشركات المتخصصة في شراء الأثاث المستعمل أن تقدم قيمة مادية للأثاث القديم وبالتالي
+							توفر المال لأصحابه.
+						</li>
+						<li>
+							2. السهولة والراحة: بدلاً من القيام بجهود كبيرة لبيع الأثاث المستعمل بشكل فردي، يمكن للأشخاص التعامل مع شركة
+							شراء الاثاث المستعمل التي تقدم خدمة سهلة ومريحة. يمكن للشركة أن تقدم تقييمًا سريعًا للأثاث وعرض عروض شراء عادلة
+							ومناسبة.
+						</li>
+						<li>
+							3. المساهمة في الحفاظ على البيئة: عندما يتم بيع الأثاث القديم لشركة شراء الأثاث المستعمل، فإنه يتم إعادة
+							استخدامه وإعادة تدويره بدلاً من رميه في المزابل. هذا يساهم في الحفاظ على الموارد الطبيعية وتقليل النفايات.
+						</li>
+						<li>4. الاستفادة من الخبرة والمهارة: شركات شراء الأثاث المستعمل</li>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي طويق</h1>
+					</div>
+					<p class="text-justify">محلات شراء أثاث مستعمل حي طويق</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي اليرموك</h1>
+					</div>
+					<p class="text-justify">اليرموك شراء الأثاث المستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي بدر</h1>
+					</div>
+					<p class="text-justify">محلات شراء الأثاث المستعمل حي بدر</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي العزيزية</h1>
+					</div>
+					<p class="text-justify">ارقام شراء أثاث مستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي الرمال</h1>
+					</div>
+					<p class="text-justify">شراء اثاث مستعمل حي الرمال</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي حطين</h1>
+					</div>
+					<p class="text-justify">شراء اثاث مستعمل حي حطين</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي الورود</h1>
+					</div>
+					<p class="text-justify">شراء اثاث مستعمل حي الورود</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي النرجس</h1>
+					</div>
+					<p class="text-justify">شراء اثاث مستعمل حي النرجس</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل حي النهضة</h1>
+					</div>
+					<p class="text-justify">نشتري مكيفات ثلاجات شاشات غسالات اثاث منزلي مستعمل</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شركة البيت الخليجي لشراء الأثاث المستعمل في الرياض تتميز بعدة مميزات، ومنها:</h1>
+					</div>
+					<ul>
+						<li>1. تقديم خدمة شراء الأثاث المستعمل بأسعار معقولة وتنافسية.</li>
+						<li>2. تقديم خدمة استلام الأثاث من موقع العميل، مما يوفر الوقت والجهد.</li>
+						<li>3. تقييم الأثاث المستعمل بشكل عادل ومهني، مما يضمن عدالة الصفقة.</li>
+						<li>4. توفير فريق محترف لفك ونقل الأثاث بأمان وسرعة.</li>
+						<li>5. تعامل محترف واحترافي مع العملاء، مع الالتزام بالمواعيد المحددة.</li>
+						<li>6. قدرة على شراء جميع أنواع الأثاث المستعمل، بغض النظر عن حالته أو حجمه.</li>
+						<li>7. شراء كنب مستعمل بالرياض</li>
+					</ul>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">البيت الخليجي</h1>
+					</div>
+					<p class="text-justify">
+						شركة شراء اثاث مستعمل بالرياض تمتلك خبرة كبيرة في مجال شراء الاثاث بجميع مناطق الرياض، لذلك إذا كنت تريد التخلص
+						من الأثاث القديم والمستعمل يمكنك التواصل معنا الآن على الفور، وسوف نقوم بإرسال مندوبين متخصصين من أجل معاينة
+						الأثاث والأدوات والأجهزة المستعملة ووضع سعر مميز للعميل بصورة سريعة وباحترافية تامة فنحن نستطيع تقدير قيمة الأثاث
+						المستعمل الحقيقة، شراء أثاث مستعمل حراج الرياض وسوف نتعرف أكثر عن الخدمات المقدمة من شركة شراء اثاث بالرياض عبر
+						هذا المقال.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						عزيزي العميل تتميز شركتنا بالسرعة والاحترافية التامة في شراء الاثاث فنحن نمتلك مجموعة من أمهر العمال والفنيين
+						نرسلهم إليك على الفور بمجرد تلقي اتصال العميل من أجل معاينة الأثاث وتقدير الثمن والقيام بإتمام عملية الشراء حال
+						الاتفاق مع العميل دون ضياع المزيد من الوقت.
+					</p>
+					<p class="text-justify">
+						نحن نمتلك الفنيين القادرين على فك العفش والقيام بتغليفه وتحميله دون أن يقوم العميل ببذل أي جهد كما أن شركتنا
+						تمتلك أسطول من السيارات، نقدم إليك خدمة شراء غرف النوم، المجالس الخشبية، المجالس الأرضية، الأجهزة، الأثاث
+						المكتبي، المطابخ.
+					</p>
+					<p class="text-justify">
+						تتميز شركتنا شراء اثاث مستعمل بالرياض بالمصداقية والاحترافية التامة في التعامل مع العملاء، لذلك يقوم العمال
+						بتنظيف المكان بعد القيام برفع الأثاث منه والعمل على إزالة الأتربة والحشرات إذا وجدت بالعفش القديم فنحن نهدف إلى
+						راحة العميل في المقام الأول.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل في الرياض</h1>
+					</div>
+					<p class="text-justify">
+						تعد شركة شراء اثاث مستعمل في الرياض واحدة من الشركات الرائدة التي تمتلك خبرة وسمعة جيدة بين شركات شراء العفش،
+						فنحن نقدم لك العديد من الخدمات بكافة أنحاء الرياض ونستطيع الوصول إليك في أي مكان وفي أي وقت بمجرد تلقي اتصال
+						العميل، لذلك إذا كنت تريد بيع أثاث مكتبك منزلك عليك التواصل على الفور مع فريق خدمة العملاء الذي يعمل على مدار
+						الساعة حتى خلال أيام الإجازات والعطلات الرسمية.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء عفش مستعمل الرياض</h1>
+					</div>
+					<p class="text-justify">
+						عزيزي العميل نحن شركة شراء عفش مستعمل الرياض نقوم بشراء اثاث المنزل والفنادق والمحلات والفنادق والمكاتب بحالته
+						بأعلى الأسعار.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل الخرج</h1>
+					</div>
+					<p class="text-justify">
+						عزيزي العميل إذا كنت تبحث عن شركات تقوم بشراء اثاث الخرج أو شركات تقوم بيع اثاث مستعمل الجهراء، فقم بالتواصل معنا
+						الآن فنحن نقوم بشراء جميع أنواع الأثاث المستعمل ونقوم بإرسال فريق من المتخصصين على الفور لمنزلك من أجل معاينة
+						الأثاث والقيام بتحديد الثمن المناسب والعادل له، ثم نقوم بعد ذلك بتغليفه ونقله على الفور.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						إذا كنت تبحث عميلنا العزيز عن أفضل شركات شراء مستعمل بالرياض قم بالتواصل الفوري مع شركتنا والتي تعد من أفضل
+						الشركات وذلك للآتي:
+					</p>
+					<ul>
+						<li>1. تقدم شركتنا خدمة الفك والتركيب لجميع قطع الأثاث.</li>
+						<li>2. تتميز شركتنا بأنها تقوم بتقديم أفضل عملية نقل الاثاث عن طريق استخدام أحدث الأجهزة والمعدات.</li>
+						<li>
+							3. نعلم جيدًا أهمية الوقت بالنسبة للعميل لذلك تتميز شركتنا بالمصداقية التامة والالتزام بالوقت المحدد مع العميل.
+						</li>
+					</ul>
+					<p class="text-justify">
+						نقدم لك أفضل الأسعار فنحن نعلم جيدًا كيفية تقدير قيمة الأثاث، ونقوم بنقل الأثاث بصورة سريعة دون إحداث فوضى
+						بالمكان ودون أن نهدر وقت العميل.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">ارقام شراء اثاث مستعمل بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						عزيزنا العميل نحن نقوم بشراء جميع أنواع الأثاث المستعمل بالرياض بأفضل الأسعار ونقوم بشراء كلاً من الأشياء الآتية:
+					</p>
+					<ul>
+						<li>
+							1. نقوم بشراء جميع غرف النوم الشبابية وغرف الأطفال وغرف النوم العادية كاملة أو حسب رغبة العميل فيمكن أن نقوم
+							بشراء الدولاب او السرير كل قطعة على حده.
+						</li>
+						<li>2. نقوم بشراء غرف الصالون والمعيشة وغرف الطعام والانتريهات والكنب.</li>
+						<li>3. شراء الكراسي بكافة أنواعها.</li>
+						<li>4. نشتري المكيفات المركزية والمكيفات الاسبليت وكافة أنواع المكيفات.</li>
+						<li>5. شراء كافة الأجهزة الكهربائية مثل” الثلاجة، الميكرويف، الأفران غسالة الأطباق، غسالة الملابس.</li>
+						<li>6. شراء جميع انواع المطابخ.</li>
+						<li>7. شراء المكاتب الخشبية وجميع الاثاث المكتبي.</li>
+						<li>8. نقوم بشراء الاجهزة الالكترونية وأجهزة الحاسوب بجميع أنواعها.</li>
+						<li>9. نشتري السجاد والموكيت والستائر وكافة المفروشات.</li>
+						<li>10. نقوم بشراء التحف والأنتيكات القديمة بأعلى الأسعار فنحن نعلم جيدًا كيفية تحديد سعرها.</li>
+					</ul>
+					<p class="text-justify">
+						لذلك عزيزي العميل إذا كنت تريد بيع أي من الأشياء السابقة عليك أن تقوم بالتواصل معنا على الفور فنحن في خدمتك،
+						ويذكر ان جميع مصاريف النقل والتغليف نتحملها نحن.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						تتميز شركتنا بشراء جميع الاثاث المستعمل وتوفير جميع الخدمات اللازمة من أجل إتمام عملية الشراء، فنحن لدينا فريق من
+						العمالة الماهرة والمدربة على التعامل مع جميع أنواع الأثاث المستعمل والأجهزة الكهربائية، مع توفير الفنيين
+						المتخصصين في أعمال الفك والنقل وتوفير جميع مواد التغليف.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء سجاد مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						تقدم لك شركة شراء اثاث الرياض خدمة شراء فرش مستعمل بحالة جيدة وبأسعار مناسبة ترضي العميل، ونقوم بتنظيف الفرش
+						المستعمل عن طريق أجهزة البخار من أجل ضمان النظافة والتطهير والتعقيم، وهي خدمة مميزة تنفرد بها شركتنا عن الشركات
+						الأخرى.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مستعمل بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						شراء اثاث مستعمل بالرياض هي واحدة من الخدمات التي نقوم بتقديمها لك باحترافية ومصداقية تامة، فنحن نقوم بشراء جميع
+						قطع الأثاث والأجهزة الكهربائية والتحف والانتيكات، مع توفير وسائل النقل والعمالة الماهرة التي تجيد التعامل مع جميع
+						أنواع الأثاث سواء مكتبي أو فندقي أو اثاث المنازل والفلل والقصور.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء كنب مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						يبحث الكثيرين عن تجديد المنزل والحاجة إلى اثاث يتناسب مع الديكور المودرن ومع الصيحات الحديثة في الأثاث، أو قد
+						يواجه البعض مشكلة ضيق المكان خاصة بعد وجود الأطفال لذلك يلجئون إلى بيع الأثاث المستعمل، لذلك نحن نقوم ب شراء كنب
+						مستعمل بالرياض بجميع أنحاء الرياض مهما كانت حالته, نقوم عزيزي العميل بتوفير أفضل الأسعار للعميل مع سرعة تنفيذ
+						المهمة والتوجه إلى منزل العميل على الفور والقيام بالمعاينة وتحديد السعر العادل الذي يرضي العميل، ثم نقوم بعد ذلك
+						بتغليف وتحميل الأثاث على السيارات الخاصة بنا.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">رقم شراء اثاث مستعمل بالرياض</h1>
+					</div>
+					<p class="text-justify">
+						تتميز شركتنا بوجود فريق عمل يعمل على مدار الوقت لتلقي كافة الاسئلة والاستفسارات الخاصة بالعميل وضمان سرعة
+						الاستجابة لطلب العميل، لذلك إذا كنت تبحث عن رقم شراء اثاث مستعمل بالرياض قم الآن بالتواصل الفوري مع فريق العمل
+						الخاص بنا، رقم شراء اثاث مستعمل بالرياض وسوف تجد رد فوري على الاتصال في أي وقت، كما أننا نرسل إليك الفنيين
+						المتخصصين في نقل الأثاث إلى منزلك على الفور في الوقت المناسب لك ومعهم سيارات نقل الأثاث حيث نقوم بإتمام عملية
+						البيع والنقل على الفور حتى لا نهدر من وقتك.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء اثاث مكتبي مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						نحن نقدم لك خدمة شراء اثاث مكتبي بأفضل الأسعار نوفر لك ايضًا جميع أنواع الاثاث المستعمل في حالة جيدة مثل الجديد،
+						لذلك إذا كنت بحاجة إلى شراء اثاث مكتبي وتريد فرش شركتك أو مكتبك عليك التواصل معنا الآن وسوف نوفر لك كل ما تريده
+						من اثاث مكتبي بأسعار تنافسية تناسب الميزانية ولن تجدها سوى معنا.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">شراء مطبخ مستعمل</h1>
+					</div>
+					<p class="text-justify">
+						نوفر لك عزيزي العميل جميع أنواع المطابخ سواء كانت خشبية أو الوميتال أو أي نوع أخر بحالة جيدة، كما اننا نقوم بشراء
+						جميع أنواع المطابخ، ثم يقوم فريق العمل الخاص بنا بنقل المطبخ وإجراء أي تصليحات به ثم يتم طرحه للبيع مرة ثانية
+						فنحن نقوم بشراء وبيع جميع أنواع الأثاث بأسعار تنافسية.
+					</p>
+					<p class="text-justify">
+						عزيزي العميل يمكنك التواصل معنا في أي وقت على مدار الساعة لتلقي كافة الأسئلة والاستفسارات التي تدور بذهنك وتقديم
+						جميع خدمات بيع وشراء الأثاث.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">لماذا نحن؟</h1>
+					</div>
+					<p class="text-justify">لأننا نشتري جميع أنواع الأثاث.</p>
+					<p class="text-justify">لأننا نشتري الاثاث بأعلى سعر.</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">اتصل الان</h1>
+					</div>
+					<p class="text-justify">
+						إذا كنت تبحث عن ارقام ناس تشتري اثاث مستعمل بأعلى سعر في الرياض، اتصل الان ولا تتردد يصلك مندوبنا فورا.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">فروعنا</h1>
+					</div>
+					<p class="text-justify">
+						نعمل بجميع المحافظات والمدن داخل الرياض، اتصل بنا الان وسوف يصلك فريقنا فورا خلال وقت قصير.
+					</p>
+				</div>
+				<div class="mt-8">
+					<div class="flex items-center gap-5">
+						<img src="./src/squares.png" alt="" />
+						<h1 class="text-3xl">مواعيد العمل</h1>
+					</div>
+					<p class="text-justify">
+						نعمل 24 ساعة يوميا.. 7 أيام أسبوعيا.. 365 يوم في السنة.. اتصل الان
+						<a href="tel:+9660535775197" class="underline text-blue-700">+9660535775197</a>
+					</p>
+				</div>
+			</container>
+		</div>
+		<footer>
+			<div class="FooterLine">جمعع الحقوق محفوظة © لشركة البيت الخليجي</div>
+			<div class="grid md:grid-cols-7 p-10 gap-5 px-20 bg-footerColor2">
+				<div class="col-span-1 md:col-span-2">
+					<img class="mb-5" src="./images/footer/logo.webp" alt="" />
+					<p>شركة شراء اثاث مستعمل بافضل الاسعار</p>
+					<p>نشتري اثاث مستعمل ( غرف نوم - مجالس - مطابخ - اجهزة كهربائية - مكيفات - معدات المطاعم ).</p>
+				</div>
+				<div class="col-span-1">
+					<h4>روابط هامة</h4>
+					<a href="#topSection"><p>البيت الخليجي</p></a>
+					<a href="#about"><p>عن الشركة</p></a>
+					<a href="#services"><p>خدماتنا</p></a>
+					<a href="tel:+9660535775197"><p>اتصل بنا</p></a>
+				</div>
+				<div class="md:col-span-2 col-span-1">
+					<h4 class="mb-10 text-white">الخدمات</h4>
+					<p>شراء الأجهزة الكهربائية المستعملة</p>
+					<p>شراء غرف نوم كاملة مستعملة</p>
+					<p>شراء طاولات الطعام والكراسي مستعملة</p>
+					<p>نقل اثاث مستعمل بالرياض</p>
+					<p>نجار اثاث بالرياض</p>
+					<p>صيانة وتصليح اثاث مستعمل</p>
+					<p>تركيب مطابخ</p>
+					<p>تركيب اثاث منزلي</p>
+				</div>
+				<div class="md:col-span-2 col-span-1">
+					<h4>تواصل معنا</h4>
+					<p class="flex items-center">
+						<span><img class="me-2" src="images/footer/location.webp" alt="" /></span>
+						العنوان: السعودية الرياض
+					</p>
+					<p class="flex items-center">
+						<span><img class="me-2" src="images/footer/phone.webp" alt="" /></span>تيليفون: 0535775197
+					</p>
+					<div class="flex justify-between mt-4">
+						<a href="tel:+9660535775197"><img src="images/footer/whats.webp" alt="" /></a>
+						<a href="beyt-elkhaleegy.com"><img src="images/footer/twitter.webp" alt="" /></a>
+						<a href="beyt-elkhaleegy.com"><img src="images/footer/youtube.webp" alt="" /></a>
+						<a href="beyt-elkhaleegy.com"><img src="images/footer/linkedin.webp" alt="" /></a>
+						<a href="beyt-elkhaleegy.com"><img src="images/footer/facebook.webp" alt="" /></a>
+					</div>
+				</div>
+			</div>
+			<a target="_blank" href="https://www.cts-egy.com/">
+				<div class="FooterLine">تصميم وتطوير © شركة Core Technology Solution</div>
+			</a>
+		</footer>
+
+		<script src="node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script src="node_modules/aos/dist/aos.js"></script>
+		<script>
+			const title = document.getElementById("titleInNav");
+			const aboutSection = document.getElementById("about");
+			console.log(aboutSection.offsetHeight);
+			console.log(aboutSection.offsetTop);
+			window.addEventListener("scroll", () => {
+				if (window.scrollY > aboutSection.offsetTop) {
+					title.classList.add("hidden");
+				} else {
+					title.classList.remove("hidden");
+				}
+			});
+			document.addEventListener("DOMContentLoaded", function () {
+				AOS.init();
+			});
+		</script>
+		<script src="dist/bundle.js"></script>
+	</body>
 </html>
